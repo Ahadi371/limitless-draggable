@@ -1,11 +1,11 @@
-fetch('https://picsum.photos/v2/list?page=2&limit=8')
+fetch('https://picsum.photos/v2/list?page=2&limit=9')
       .then(response => response.json())
       .then(json => {
         let photoInfo = ""
         for (const gellery of json) {
             console.log(gellery);
             photoInfo += `
-            <div class="col-lg-6 p-1">
+            <div class="col-lg-4 p-1">
             <img src= ${gellery.download_url} width="100%">
             </div>
             `
@@ -20,7 +20,7 @@ fetch('https://picsum.photos/v2/list?page=2&limit=8')
 window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
    window.weatherWidgetConfig.push({
        selector:".weatherWidget",
-       apiKey:"J7LM8UHF9J6HJPF8VZH3HD9MS&contentType=json", //Sign up for your personal key
+       apiKey:"V3SDBZBNSN3J62ER2PV6AA9NL&contentType=json", //Sign up for your personal key
        location:"MYMENSINGH, BANGLADESH", //Enter an address
        unitGroup:"metric", //"us" or "metric"
        forecastDays:5, //how many days forecast to show
