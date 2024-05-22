@@ -1,11 +1,11 @@
-fetch('https://picsum.photos/v2/list?page=2&limit=9')
+fetch('https://picsum.photos/v2/list?page=2&limit=40')
       .then(response => response.json())
       .then(json => {
         let photoInfo = ""
         for (const gellery of json) {
             console.log(gellery);
             photoInfo += `
-            <div class="col-lg-4 p-1">
+            <div class="col-lg-2 p-1">
             <img src= ${gellery.download_url} width="100%">
             </div>
             `
@@ -34,4 +34,4 @@ window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
    s.src = 'https://www.visualcrossing.com/widgets/forecast-simple/weather-forecast-widget-simple.js';
    s.setAttribute('data-timestamp', +new Date());
    (d.head || d.body).appendChild(s);
-   })();
+})();
