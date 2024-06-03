@@ -253,7 +253,7 @@
 
 						<div class="card">
 							<div class="card-header bg-success-700 header-elements-inline">
-								<h6 class="card-title">Sortable card 4</h6>
+								<h6 class="card-title">Calculator</h6>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -261,8 +261,32 @@
 				                	</div>
 			                	</div>
 							</div>
+							<div class="table-responsive px-3 pt-3 pb-3">
+								<div class="calculator">
+									<input type="text" class="calculator-screen" value="0" disabled />
+									<div class="calculator-keys">
+										<button type="button" class="operator" value="+">+</button>
+										<button type="button" class="operator" value="-">-</button>
+										<button type="button" class="operator" value="*">&times;</button>
+										<button type="button" class="operator" value="/">&divide;</button>
+										<button type="button" value="7">7</button>
+										<button type="button" value="8">8</button>
+										<button type="button" value="9">9</button>
+										<button type="button" value="4">4</button>
+										<button type="button" value="5">5</button>
+										<button type="button" value="6">6</button>
+										<button type="button" value="1">1</button>
+										<button type="button" value="2">2</button>
+										<button type="button" value="3">3</button>
+										<button type="button" value="0">0</button>
+										<button type="button" class="decimal" value=".">.</button>
+										<button type="button" class="all-clear" value="all-clear">AC</button>
+										<button type="button" class="equal-sign" value="=">=</button>
+									</div>
+								</div>
+							</div>
 							
-							<div class="table-responsive">
+							<!-- <div class="table-responsive">
 								<table class="table">
 									<thead>
 										<tr>
@@ -297,7 +321,7 @@
 										</tr>
 									</tbody>
 								</table>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<div class="col-md-4">
@@ -715,5 +739,6 @@
 	<!-- /page content -->
 <script src="draggable.js"></script>
 <script src="./calendar.js"></script>
+<script src="./calculator.js"></script>
 </body>
 </html>
